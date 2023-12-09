@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Metadatos -->
+  <meta charset="utf-8">
+  <meta name="author" content="NEY">
+  <meta name="description" content="Portafolio de desarrollo web de Jane Doe">
+  <meta name="keywords" content="Shein,Addidas,Pirma,Puma,chanel">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Titulo -->
+  <title>NEY | NEY FASHION Front-End </title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/estrella.png">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- Iconos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- CSS -->
+  <link href="css/stilos.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Barra de navegacion -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="#">
+          <img src="img/estrella.png" width="50" alt="MARCAS">
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#ACERCA-DE NOSOTROS">ACERCA DE NOSOTROS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#comentarios">Comentarios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ropa">Ropa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seccion Hero -->
+  <section class="hero align-items-stretch">
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+      <img class="hero-imagen-desarrollador rounded-circle" src="img/ropa.png" alt="Foto de Jane Doe">
+      <h1>¡BIENVENIDOS A MI TIENDA DE ROPA!</h1>
+      <h2>Zaga la Marca de tu Vida</h2>
+      <!--Animación con JavaScript-->
+      <h2 class="text-primary mb-4" id="typewriter"></h2>
+    </div>
+    <div class="hero-inferior">
+      <img class="hero-inferior-imagen img-fluid" src="img/moda.jpeg"
+        alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+    </div>
+  </section>
+
+  <!-- Sobre mi -->
+  <section id="sobre-mi" class="sobre-mi seccion-oscura">
+    <div class="contenedor">
+      <h2 class="seccion-titulo">CONOCE MAS SOBRE MI</h2>
+      <p class="seccion-texto"> Mi nombre es Vianey Zagaceta,tengo 19 años y actualmente me encuentro estudiando la carrera de LAGE, esta página fue desarrollada por un proyecto
+        escolar dando como resultado una tienda online,en la cual miles de usuarios podran hacer compras de cualquier tipo de outfit. </p>
+    </div>
+  </section>
+
+  <!-- Experiencia -->
+  <section class="experiencia seccion-clara">
+    <div class="container text-center">
+      <div class="row">
+        <!-- Desarrollo Web -->
+        <div class="columna col-12 col-md-4">
+          <img src="img/estrella.png" width="100" alt="MARCAS">
+          <p class="experiencia-titulo">NEY FASHION</p>
+          <p>Ofrecer a los clientes los precios más bajos que sea posible, obteniendo la mayor selección y disponibilidad de la forma más rápida y cómoda posible”
+            además tener la mejor atención al cliente del mundo y la 
+            obsesión por el cliente, pasión por la innovación, excelencia operacional, enfoque en el largo plazo.</p>
+        </div>
+        <!-- Articulos -->
+        <div class="columna col-12 col-md-4">
+          <img src="img/ney.png" width="100" alt="DISEÑADOR"> 
+          <p class="experiencia-titulo">DISEÑADOR</p>
+          <p>Crear diseños adecuados para la producción dirigida al mercado de masas. En este caso, es importante tener en cuenta el coste de los materiales y la rapidez en la producción de las prendas, para optimizar el proceso.
+            Diseñar y confeccionar prendas de alta costura. Se trata del área más exclusiva de diseño de moda y consiste en crear y confeccionar prendas originales para clientes individuales. </p>
+        </div>
+        <!-- Estudiante -->
+        <div class="columna col-12 col-md-4">
+          <img src="img/reparto.png" width="100" alt="reparto"> 
+          <p class="experiencia-titulo">REPARTO</p>
+          <p>Ofrecer a los residentes y a las personas que nos visitan una alternativa válida que cubra sus necesidades de transporte de una forma eficiente y sostenible, contribuyendo al desarrollo de nuestro territorio</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="ropa" class="proyectos-recientes seccion-clara d-flex flex-column">
+    <h2 class="seccion-titulo texto-negro">Productos en Venta</h2>
+    <h3 class="seccion-descripcion">Estos son algunos de los Ouffits que tenemos a la venta</h3>
+    <!-- Galeria de Proyectos -->
+    <div class="container text-center proyectos-contenedor">
+      <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="img/sudarera.jpeg" alt="sudadera">
+              <div class="overlay">
+                <p>sudaderas</p>
+                <div class="iconos-contenedor">
+                  <a href="https://mastermonkeystore.com/collections/hoodie?gclid=CjwKCAiAmsurBhBvEiwA6e-WPFWD4-uXoJrQ0QzGpAqVbjldSjVJVMDoBIj8qdkMXuKCfZ2bCQ3OhBoCAn4QAvD_BwE/" target="_blank" rel="noopener noreferrer"> 
+                  </a>
+                  <a href="https://mastermonkeystore.com/collections/hoodie?gclid=CjwKCAiAmsurBhBvEiwA6e-WPFWD4-uXoJrQ0QzGpAqVbjldSjVJVMDoBIj8qdkMXuKCfZ2bCQ3OhBoCAn4QAvD_BwE/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-cart-check-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- Proyecto 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="img/saco.jpeg" alt=" Saco">
+            <div class=" overlay">
+              <p>Saco</p>
+                <div class="iconos-contenedor">
+                  <a href="https://www.etsy.com/mx/market/gabardina_mujer/" target="_blank" rel="noopener noreferrer"> 
+                  </a>
+                  <a href="https://www.etsy.com/mx/market/gabardina_mujer/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-cart-check-fill"></i>
+                  </a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="img/bufanda.jpeg" alt="Bufandas">
+            <div class="overlay">
+              <p>Bufandas</p>
+              <div class="iconos-contenedor">
+                <a href="https://mx.ebay.com/b/Womens-Scarves-Wraps/45238/bn_1521581/" target="_blank" rel="noopener noreferrer"> 
+                </a>
+                <a href="https://mx.ebay.com/b/Womens-Scarves-Wraps/45238/bn_1521581/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-cart-check-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 4 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="img/pantalon cafe.webp" alt="Pantalones para dama">
+            <div class="overlay">
+              <p>Pantalones para dama</p>
+              <div class="iconos-contenedor">
+                <a href="https://www2.hm.com/es_mx/mujer/productos/pantalones.html/" target="_blank" rel="noopener noreferrer"> 
+                </a>
+                <a href="https://www2.hm.com/es_mx/mujer/productos/pantalones.html/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-cart-check-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 5 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="img/pantalonescaballero.jpeg" alt="Pantalones para caballero">
+            <div class="overlay">
+              <p>Pantalones para Caballero</p>
+              <div class="iconos-contenedor">
+                <a href="https://www.nike.com/mx/w/hombres-negro-sudaderas-con-sin-gorro-6rivez90poyznik1/" target="_blank" rel="noopener noreferrer"> 
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-cart-check-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 6 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="img/chalecos.webp" alt="Chalecos">
+            <div class="overlay">
+              <p>Chalecos</p>
+              <div class="iconos-contenedor">
+                <a href="https://www2.hm.com/es_mx/mujer/productos/pantalones.html/" target="_blank" rel="noopener noreferrer"> 
+                </a>
+                <a href="https://www2.hm.com/es_mx/mujer/productos/pantalones.html/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-cart-check-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section id="testimonios" class="testimonios seccion-clara">
+    <h2 class="seccion-titulo">Comentarios</h2>
+    <h3 class="seccion-descripcion">Estos son algunos de los comentarios de nuestros clientes...</h3>
+
+    <!-- Carrusel -->
+    <div id="comentarios" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <img class="comentario-imagen rounded-circle" src="img/paloma.png.jpeg" width="100"height="100" alt="Foto de PALOMA">
+            <p class="comentario-texto">Muy profesionales, gran confianza por el servicio y trato, hacen que te encuentres muy cómodo en todo momento, hemos estado siempre en contacto para resolver cualquier duda y sugerencia.
+              Valoro muchísimo a NEY FASHION por su gran creatividad en cuanto al diseño de la ropa, hace que la tienda virtual sea de una gran calidad.
+            </p>
+            <div class="comentario-info">
+              <p class="cliente">PALOMA</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="img/citla.png.jpeg" width="150"height="150"alt="Foto de alex">
+            <p class="testimonio-texto">Estoy muy satisfecho con el trabajo de NEY FASHION. Gran equipo de profesionales, atención personalizada y amabilidad. Resuelven tus dudas y te asesoran en todo momento sobre el funcionamiento de la web.</p>
+            <div class="testimonio-info">
+              <p class="cliente">CITLALI</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="img/tom.png.jpeg" alt="Foto de TOM">
+            <p class="testimonio-texto">Confianza y profesionalidad es lo que define al servicio de esta tienda,trabajando con ellos me sentí muy cómoda y además sentí que entendían mis ideas. 
+              Lo mejor fue como transformaron lo que yo quería a la realidad aun en los pequeños detalles. </p>
+            <div class="testimonio-info">
+              <p class="cliente">TOM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto seccion-oscura">
+    <div class="container">
+      <div class="container text-center rectangulo d-flex justify-content-evenly">
+        <div class="row">
+          <div class="col-12 col-md-4 seccion-titulo">
+            ¡Hablemos!
+          </div>
+          <div class="col-12 col-md-4 descripcion">
+            Contáctame para conocer mas de nuestras prendas de ropa que tenemos para ti
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="mailto:janedoe@micorreo.com">
+              <button type="button">
+                Contacto
+                <i class="bi bi-envelope-check-fill"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de pagina (footer) -->
+  <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+      </a>
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="mailto:vianeymercado06@gmail.com.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope"></i>
+        <a href="https://github.com/vianeymer" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+      </a>
+    </div>
+    <div class="derechos-de-autor">Creado por Zaga International (2023) &#169;</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="js/javascrip.js"></script>
+
+</body>
+
+</html>
